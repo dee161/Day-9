@@ -1,0 +1,22 @@
+{
+  "name": "day-9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.2.0",
+    "@supabase/supabase-js": "^2.33.2",
+    "express": "^4.18.2",
+    "nodeman": "^1.1.2",
+    "nodemon": "^3.0.1",
+    "prisma": "^5.2.0",
+    "supabase": "^1.93.0",
+    "yarn": "^1.22.19"
+  }
+}
