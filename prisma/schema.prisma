@@ -10,18 +10,32 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model admin {
+  id       Int     @id @default(autoincrement())
+  name     String
+  email    String  @unique
+  password String
+  image    String?
+}
 
 model user {
   id      Int    @id @default(autoincrement())
-  title   String 
+  time    String
   content String
+  image   String
   posts   plan[]
 }
 
 model plan {
-  id      Int    @id @default(autoincrement())
-  title   String @unique
-  content user   @relation(fields: [autherId], references: [id])
+  id       Int    @id @default(autoincrement())
+  title    String @unique
+  content  user   @relation(fields: [autherId], references: [id])
   autherId Int
 }
 
+model movie {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  image       String
+}
